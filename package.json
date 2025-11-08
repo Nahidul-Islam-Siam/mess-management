@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "node api.js && next dev --turbopack",
     "dev:server": "node server/index.js",
     "dev:all": "concurrently \"npm run dev:server\" \"npm run dev\"",
-    "build": "next build --turbopack",
-    "start": "next start",
+    "build": "node api.js && next build --turbopack",
+    "start": "node api.js && next start",
     "start:server": "node server/index.js",
     "lint": "eslint"
   },
